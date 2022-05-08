@@ -1,0 +1,31 @@
+{
+  "name": "wudao-electron",
+  "version": "1.0.0",
+  "description": "wudao's electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yhzhu",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "directories":{
+       "output": "build"
+    },
+    "mac": {
+       "icon": "build/logo.icns"
+    },
+    "win": {
+       "icon": "build/logo.png"
+    },
+    "linux": {
+      "icon": "build/logo.png"
+    }
+  }
+}
